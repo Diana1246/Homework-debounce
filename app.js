@@ -34,7 +34,7 @@ function handleSlidersChange() {
   }
 
   
-  const debouncedSliderChange = debounce(handleSliderChange, 200);
+  const debouncedSliderChange = _.debounce(handleSliderChange, 500);
 
    
   sliderInput.addEventListener('input', debouncedSliderChange);
